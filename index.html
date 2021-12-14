@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descrption" content="Esta web trata sobre la asignatura BASE DE DATOS del Grado Superior de Desarrollo de Aplicaciones Multiplataforma">
+    <link rel="stylesheet" href="css/estilos.css">
+  
+    <link  href="inicio.html">
+
+    <title>Base de Datos</title>
+    
+</head>
+<body class="formulario">
+    <main id="formulario">
+        <div>
+        <h2 id="cabecera">Rellene el formulario para acceder a la página.</h2>
+    <form action="inicio.html" method="get">
+        <fieldset>
+        <label for="Nombre">Nombre</label>
+        <input type="text" name="Nombre" id="texto" required>
+        <hr>
+        <label for="Apellidos">Apellidos</label>
+        <input type="text" name="Apellidos" id="texto" >
+        <hr>
+        <label for="correo">Correo electrónico</label>
+        <input type="email" name="correo" id="texto" required>
+        <hr>
+        <label for="contraseña">Contraseña</label>
+        <input type="password" name="contraseña" id="texto" required>
+        <hr>
+        <label for="fecha">Fecha de nacimiento</label>
+        <input type="date" name="fecha">
+        <hr>
+        <label for="nivel">Nivel en Base de Datos: </label>
+        <input type="radio" name="nivel"><label for="nivel" id="radio">Bajo</label>
+        <input type="radio" name="nivel"><label for="nivel" id="radio">Medio</label>
+        <input type="radio" name="nivel"><label for="nivel" id="radio">Alto</label>
+        <hr>
+        <input type="checkbox" name="aceptar" required><label for="aceptar">Acepto entrar en la página.</label>
+        <hr>
+        <input type="submit" id="sub">
+
+            
+        </fieldset>
+    </form>
+    </div>
+    </main>
+</body>
+</html>

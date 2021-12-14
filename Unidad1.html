@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descrption" content="Esta web trata sobre la asignatura BASE DE DATOS del Grado Superior de Desarrollo de Aplicaciones Multiplataforma">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link  href="index.html">
+    <link  href="Unidad1.html">
+    <link  href="Unidad2.html">
+    <link  href="Unidad3.html">
+    <link  href="Unidad4.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+    <title>Base de Datos</title>
+    
+</head>
+<body>
+    <main>
+    <header>
+        <button class="boton" onclick="accion()">&#9776;</button>            
+            <a href="inicio.html">BASE DE DATOS</a>
+            
+           
+        
+    </header>
+ 
+    <section>
+        <h1>UNIDAD 1</h1>
+        <div id="botones">
+            <a href="inicio.html"><button>Inicio</button></a>
+            <a href="Unidad2.html"><button>Unidad 2</button></a>
+        </div>
+        <hr>
+        <h2 id="sa">Sistemas de almacenamiento</h2>
+        <article>
+            <h3>Sistemas de almacenamiento de información.</h3>
+            <p>A nivel físico, nos encontramos con dispositivos capaces de almacenar información.</p>
+            <div id="imagenes">
+            <img src="data:image/jpeg;base64,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" alt="imagen de disco duro" title="Disco duro">
+            <img src="data:image/jpeg;base64,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" alt="imagen de disco duro externo" title="Disco externo">
+            <img src="data:image/jpeg;base64,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" alt="imagen de pendrive" title="Pendrive">
+            </div>
+            <hr>
+            <h3>¿Cómo se mide la información?</h3>
+            <table>
+                <th>Unidad</th>
+                <th>Descripción</th>
+                <tr>
+                    <td>Bit</td>
+                    <td>Dígito binario</td>
+                </tr>
+                <tr>
+                    <td>Byte</td>
+                    <td>Combinación de 8 bit</td>
+                </tr>
+                <tr>
+                    <td>Kilobyte(Kb)</td>
+                    <td>1024 bytes</td>
+                </tr>
+                <tr>
+                    <td>Megabyte</td>
+                    <td>1024 kilobytes</td>
+                </tr>
+                <tr>
+                    <td>Gigabyte</td>
+                    <td>1024 megabytes</td>
+                </tr>
+                <tr>
+                    <td>Terabyte</td>
+                    <td>1024 gigabytes</td>
+                </tr>
+                <tr>
+                    <td>Petabyte</td>
+                    <td>1024 terabytes</td>
+                </tr>
+            </table>
+            <hr>
+            <h3>¿Qué es una base de datos?</h3>
+            <p>Una base de datos es una colección de
+                información organizada de forma que un
+                programa de ordenador pueda seleccionar
+                rápidamente los fragmentos de datos que
+                necesite. Las bases de
+                datos tradicionales se organizan por
+                campos, registros y archivos.</p>
+            <hr>
+            <h3>Ficheros de datos.</h3>
+            <p>Las bases de
+                datos tradicionales se organizan por
+                campos, registros y archivos.</p>
+            <li><a href="https://drive.google.com/file/d/1nD02Z28Gzi4CTaU2HShp4_d79pvjxK9p/view?usp=drive_web&authuser=0" target="blank">Archivo de datos delimitados(csv).</a></li>
+            <li><a href="https://drive.google.com/file/d/1xcfgZaieeOONQ2Ie-CmQMnwW7iG39D_T/view?usp=drive_web&authuser=0" target="blank">Archivo de datos de ancho fijo.</a></li>
+            <li><a href="https://drive.google.com/file/d/1aSxWqXEsMz7-KHQfyh3BaCIOksqhyEZl/view?usp=drive_web&authuser=0" target="blank">Archivo de datos separados por tabulaciones.</a></li>
+            <li><a href="https://drive.google.com/file/d/1_pmAia6aRtagMbZMuhptwGSUa1c9-5F1/view?usp=drive_web&authuser=0" target="blank">Archivo XML.</a></li>
+            <li><a href="https://drive.google.com/file/d/1ebDK65-8uwtFqsGFv-wE2Jrk4nLwZkpe/view?usp=drive_web&authuser=0" target="blank">Archivo JSON.</a></li>
+            <hr>
+            <div id="#csv">
+                <h3>Archivo de datos delimitados.</h3>
+                <p>Los archivos CSV (comma-separated values) son un tipo de
+                    documento en formato de texto simple que representar datos
+                    en forma de tabla, en las que las columnas se separan por
+                    comas (o punto y coma en los países donde el separador
+                    decimal es la coma) y las filas o registros por saltos de
+                    línea.</p>
+
+            </div>
+            <hr>
+            <div id="#ancho">
+                <h3>Archivo de ancho fijo.</h3>
+                <p>Los archivos de ancho fijo son archivos de texto en los que
+                    las columnas no están separadas por ningún delimitador de
+                    caracteres, como en el caso de los archivos CSV, sino más
+                    bien tener una longitud de caracteres fija (ancho). Los
+                    datos se suelen rellenar con espacios en blanco.</p>
+            </div>
+            <hr>
+            <div id="#tab">
+                <h3>Archivo de datos separados por tabulaciones.</h3>
+                <p>En este tipo de archivos, lo que separa cada uno de los
+                    valores o campos es un carácter de tabulación. El cambio de
+                    registro o entidad está determinado por un salto de línea
+                    como en los formatos anteriores.</p>
+
+            </div>
+            <hr>
+            <div id="#xml">
+                <h3>Archivo XML</h3>
+                <p>XML es el acrónimo de
+                    Extensible Markup
+                    Language, es decir, es
+                    un lenguaje de marcado
+                    que define un conjunto
+                    de reglas para la
+                    codificación de
+                    documentos.</p>
+            </div>
+            <hr>
+            <div id="#json">
+                <h3>Archivo JSON</h3>
+                <p>JSON (acrónimo de
+                    JavaScript Object
+                    Notation, notación de
+                    objeto de JavaScript) es
+                    un formato de texto
+                    sencillo para el
+                    intercambio de datos.</p>
+            </div>
+            <hr>
+        </article>
+        <h2 id="bd">Las bases de datos.</h2>
+        <article>
+            <h3>Concepto de base de datos.</h3>
+            <p>Las bases de datos son conjuntos o colecciones de datos que servirán tanto a usuarios y
+                cómo a programas para definir, capturar, almacenar y consultar dichos datos.
+                
+                Para poder gestionar estas colecciones de datos de la manera de más óptima posible son
+                necesarios los DBMS (Database Management System), en español SGBD (Sistema de
+                Gestión de Bases de Datos).</p>
+                <hr>
+           <h3>Objetivos de un buen DBMS</h3> 
+           <li>
+               <span id="titulos">Evitar la redundancia de datos: </span>El mismo cliente almacenado dos veces.
+           </li>
+           <li>
+               <span id="titulos">Evitar la inconsistencia: </span>Si un cliente está
+                almacenado dos veces, puede ser que existan datos distintos en cada registro, por
+                ejemplo: distinto domicilio.
+           </li>
+           <li>
+               <span id="titulos">Evitar la dificultad para tener acceso a los datos: </span>El acceso a los datos debe ser
+                sencillo tanto para humanos cómo para programas. Además se debe gestionar el nivel
+                de permisos de cada usuario.
+           </li>
+           <li>
+               <span id="titulos">Garantizar el aislamiento de datos: </span>Es una de las cuatro propiedades ACID
+                (Atomicidad, Consistencia, Aislamiento y Durabilidad) que deben cumplir las bases
+                de datos durante una transacción.
+           </li>
+           <li>
+               <span id="titulos">Evitar las anomalías de acceso compartido: </span>Varias aplicaciones o usuario pueden
+                estar intentando acceder a los mismos datos. El DBMS debe garantizar una buena
+                gestión de bloqueo de registro o campo para evitar conflictos.
+           </li>
+           <li>
+               <span id="titulos">Evitar problemas de seguridad: </span>El DBMS o sistema gestor de base de datos debe
+                asegurar que las bases de datos puedan ser compartidas, estén protegidas frente a
+                fallos y no tengan problemas de accesos indebidos. En cuanto a la seguridad hay que
+                considerar los siguientes aspectos:
+                <li class="lista"><span id="titulos">Confidencialidad: </span>Los datos deberían ser inaccesibles para las personas o programas no autorizadas.</li>
+                <li class="lista"><span id="titulos">Integridad: </span>Los datos deben ser verídicos y fiables. Este aspecto se tratará más adelante.</li>
+                <li class="lista"><span id="titulos">Disponibilidad: </span>No debe haber pérdida de información y los datos siempre tienen que estar disponibles.</li>
+            </p>
+           </li>
+           <hr>
+
+           <h3>Integridad de datos.</h3>
+           <p>Las violaciones de integridad vienen dadas, normalmente, por tipos de datos incorrectos o por duplicados, o eliminación de un registro del cual depende otro.</p>
+           <h3>Tipos de integridad que debe asegurar un DBMS</h3>
+           <li><span id="titulos">Integridad de dominio: </span>los datos que se incluyen en cada campo dentro de un
+            registro forman parte de un dominio (conjunto de valores posible). El dominio es el
+            rango de valores posibles para un determinado campo.</li>
+           <li><span id="titulos">Integridad de entidad: </span>cada registro o entidad debe tener una clave primaria que lo
+            identifique inequívocamente.</li>
+           <li><span id="titulos">Integridad referencial: </span>cuando un registro está asociado a otro o depende de otro,
+            hay que asegurar que siempre existirá el registro del que depende. Por ejemplo: una
+            factura siempre dependerá de la existencia de un cliente.</li>
+            <hr> 
+
+            <h3>Modelos de bases de datos</h3>
+            <p>
+                Se trata de una estructura lógica en la que la base de datos será construida, y que determinará cómo son almacenados. 
+            </p>
+            <p>De momento trataremos solamente con el mas típico, que es el MER(modelo entidad-relación).</p>
+            <hr>
+            <h3>Etapas de diseño de una base de datos</h3>
+            <li><span id="titulos">Diseño conceptual: </span>Es una primera aproximación a la base de datos representada en
+                un tipo de diagrama. El más utilizado es el modelo-entidad-relación.</li>
+            <li><span id="titulos">Diseño lógico: </span>Una vez definido el diseño conceptual se trasladará, teniendo en
+                cuenta unas reglas determinadas, al esquema lógico, en el que se definirán tablas,
+                columnas, asociaciones, etc.</li>
+            <li><span id="titulos">Diseño físico: </span>En este modelo se crearán en el DBMS los elementos que se han
+                definido en el diseño lógico.</li>
+                <hr>
+            <h3>Conceptos de los modelos relacionales de bases de datos: </h3>
+            <li><span id="titulos">ENTIDAD: </span>Se trata de un elemento del mundo real como puede ser un cliente.También se puede definir como registro fila.</li>
+            <li><span id="titulos">ATRIBUTO O CAMPO: </span>Propiedad o característica de una entidad.</li>
+            <li><span id="titulos">RELACION: </span>Conjunto de entidades del mismo tipo.</li>
+            <li><span id="titulos">ASOCIACIÓN: </span> Unión que existe entre 2 entidades.</li>
+            <li><span id="titulos">CLAVE PRINCIPAL: </span>También conocida como Primary Key(PK), es un atributo que identifica inequivocamente a una entidad. Debe ser única, no nula y, preferiblemente, que ocupe poco espacio.</li>
+            <li><span id="titulos">CLAVE EXTRANJERA: </span>También conocida como Foreign Key(FK), es cuando una entidad cede su  PK a otra entidad para establecer una asociación. </li>
+            <li><span id="titulos">TIPOS DE ASOCIACIONES: </span>
+                <li class="lista"><span id="titulos">Uno a uno(1:1): </span>Una entida con otra entidad, por ejemplo, una persona con una partida de nacimiento.</li>
+                <li class="lista"><span id="titulos">Uno a muchos(1:N): </span>Una entidad con varias entidades, por ejemplo, un cliente a varias facturas.</li>
+                <li class="lista"><span id="titulos">Muchos a 1(N:1): </span>Varias entidades con 1 entidad, al revés que la anterior.</li>
+                <li class="lista"><span id="titulos">Muchos a muchos(N:M): </span>Varias entidades con varias entidades, por ejemplo, un producto a muchas facturas, y una factura con muchos productos. Una vez que queremos hacer el diseño físico, son inviables con
+                lo cual tenemos que transformarlas en 2 relaciones 1:N creando una entidad asociativa que las una.</li>
+            </li>
+            <hr>
+            <h3>Ejemplos de modelos entidad-relación.</h3>
+            <p>Base de datos para una ferretería en la que queremos saber las relaciones entre los clientes, las facturas y los productos. Por un lado tenemos el modelo entidad relación, y por otro el diseño lógico. </p>
+            <img src="images/mer.PNG" alt="Imagen de MER" title="Modelo entidad relación">
+            <img src="images/atributos.PNG" alt="Imagen diseño logico" title="Diseño lógico" >
+            <p>Puedes encontrar ejercicios para ponerte a prueba haciendo <a href="https://bustamanteg.files.wordpress.com/2010/06/ejercicios-mer-resueltos-para-publicar.pdf" target="blank" id="enlace">click aqui.</a></p>
+
+            
+        </article>
+
+
+
+    </section>
+
+    <nav id="mySidenav" class="sidenav Nav-Enlace desaparece">
+        <div>
+            <a href="javascript:void(0)" class="closebtn desaparece" onclick="closeNav()">&times;</a>
+        <h4>Unidad 1</h4>
+        <a href="Unidad1.html#sa">Sistemas de Almacenamiento</a>
+        <a href="Unidad1.html#bd">Bases de datos</a>
+        <h4>Unidad 2</h4>
+        <a href="Unidad2.html#sql">SQL</a>
+        <a href="Unidad2.html#sentencias">DDL,DML,DCL,TCL</a>
+        <a href="Unidad2.html#create">SQL CREATE</a>
+        <a href="Unidad2.html#drop">SQL DROP</a>
+        <a href="Unidad2.html#alter">SQL ALTER</a>
+
+
+
+       
+        <h4>Unidad 3</h4>
+        <a href="Unidad3.html#select">SELECT</a>
+        <a href="Unidad3.html#where">WHERE</a>
+        <a href="Unidad3.html#orderby">ORDER BY</a>
+        <a href="Unidad3.html#operators">Operators</a>
+        <a href="Unidad3.html#groupby">GROUP BY</a>
+        <a href="Unidad3.html#count">COUNT(),AVG(),SUM()</a>
+        <a href="Unidad3.html#min">MIN(),MAX()</a>
+        <a href="Unidad3.html#having">HAVING</a>
+        <a href="Unidad3.html#joins">JOINS</a>
+        <a href="Unidad3.html#union">UNION</a>
+
+        <h4>Unidad 4</h4>
+       <a href="Unidad4.html#insertinto">INSERT INTO</a>
+       <a href="Unidad4.html#update">UPDATE</a>
+       <a href="Unidad4.html#delete">DELETE</a>
+    </div>
+
+    </nav>
+    <aside>
+        <a href="https://www.udemy.com/course/curso-completo-de-bases-de-datos-de-0-a-avanzado/?utm_source=adwords&utm_medium=udemyads&utm_campaign=LongTail_la.ES_cc.ES&utm_term=_._ag_120892795813_._ad_515900100215_._kw__._de_c_._dm__._pl__._ti_dsa-1190286617479_._li_9047045_._pd__._&matchtype=&gclid=Cj0KCQiA47GNBhDrARIsAKfZ2rCWsBB1WUZxZK3zHQ2TpyF15Qj-6v6NRcU6O04R2re0vTtggl8tvh0aAkggEALw_wcB" target="blank"><img src="https://medievalstrucos.files.wordpress.com/2018/05/sql.png?w=840" alt="Publicidad"></a>
+        <a href="https://courses.w3schools.com/"><img src="data:image/png;base64,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" alt="Publicidad"></a>
+    
+    </aside>
+    <footer>
+        <div> 
+        <p>Referencias</p>
+        <a href="https://www.w3schools.com/sql/default.asp" target="blank">W3Schools</a>
+        <a href="https://platzi.com/blog/que-es-ddl-dml-dcl-y-tcl-integridad-referencial/" target="blank">Operaciones con BD</a>
+        </div>
+        <div>
+            <p>Aprende con nosotros</p>
+            <a href="https://campusfp.es/" target="blank">CampusFP</a>
+        </div>
+      
+    </footer>
+</main>
+<script>    
+    function accion(){
+        console.log("Esta funcionando el boton");
+        var ancla = document.getElementsByClassName("Nav-Enlace");
+        document.getElementById("mySidenav").style.width = "100%";
+        for (var i = 0; i < ancla.length; i++) {
+            ancla[i].classList.toggle("desaparece");
+            
+        }
+    }
+ 
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+</script>
+</body>
+</html>

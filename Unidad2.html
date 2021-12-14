@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descrption" content="Esta web trata sobre la asignatura BASE DE DATOS del Grado Superior de Desarrollo de Aplicaciones Multiplataforma">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+    <title>Base de Datos</title>
+    
+</head>
+<body>
+    <main>
+    <header>
+        <button class="boton" onclick="accion()">&#9776;</button>            
+            <a href="inicio.html">BASE DE DATOS</a>
+            
+           
+        
+    </header>
+    <section>
+        <h1>Unidad 2</h1>
+        <div id="botones">
+            <a href="Unidad1.html"><button>Unidad 1</button></a>
+            <a href="Unidad3.html"><button>Unidad 3</button></a>
+        </div>
+        <article>
+        <h2 id="sql">SQL</h2>
+        <div>
+            <p>SQL es un lenguaje estandar de almacenamiento, manipulación y tratamiento de datos sobre una base de datos.</p>
+            <p>Utilizaremos en concreto para comenzar MySQL que es uno de los sistemas de base de datos que utiliza este estandar.</p>
+            <p>Si quieres comenzar a utliizar MySQL haz click <a href="https://dev.mysql.com/downloads/workbench/" target="blank" id="enlace">aquí.</a></p>
+            <hr>
+            <p>Existe una gran variedad de tipos de datos en SQL, los cuales puedes consultar en el siguiente <a href="https://www.w3schools.com/sql/sql_datatypes.asp"id="enlace" target="blank">enlace.</a>.</p>
+        </div>
+        </article>
+        <article>
+        <h2 id="sentencias">DDL, DML, DCL, TCL.</h2>
+        <p>Se trata de unos componentes de SQL que se componen a su vez de varias sentencias a la hora de crear nuestra base.</p>
+        <div>
+            <h3>¿Qué es DDL?</h3>
+            <p>DDL significa Data Definition Language o Lenguaje de Definición de Datos, en español. Permite crear y modificar la estructura de una base de datos.</p>
+            <h4>Sentencias DDL</h4>
+            <li><span id="titulos">CREATE: </span>Utilizado para crear nuevas tablas, campos e índices.</li>
+            <li><span id="titulos">ALTER: </span>Utilizado para modificar las tablas agregando campos o cambiando la definición de los campos.</li>
+            <li><span id="titulos">DROP: </span>Empleado para eliminar tablas e índices.</li>
+            <li><span id="titulos">TRUNCATE: </span>Empleado para eliminar todos los registros de una tabla.</li>
+            <li><span id="titulos">COMMENT: </span>Utilizado para agregar comentarios al diccionario de datos.</li>
+            <li><span id="titulos">RENAME: </span>Tal como su nombre lo indica es utilizado para renombrar objetos.</li>
+        </div>
+        <hr>
+        <div>
+            <h3>¿Qué es DML?</h3>
+            <p>DML significa Data Manipulation Language o Lenguaje de Manipulación de Datos en español. Permite recuperar, almacenar, modificar, eliminar, insertar y actualizar datos de una base de datos.</p>
+            <h4>Sentencias DML</h4>
+            <li><span id="titulos">SELECT: </span>Utilizado para consultar registros de la base de datos que satisfagan un criterio determinado.</li>
+            <li><span id="titulos">INSERT: </span>Utilizado para cargar de datos en la base de datos en una única operación.</li>
+            <li><span id="titulos">UPDATE: </span>Utilizado para modificar los valores de los campos y registros especificados.</li>
+            <li><span id="titulos">DELETE: </span>Utilizado para eliminar registros de una tabla de una base de datos.</li>
+        </div>
+        <hr>
+        <div>
+            <h3>¿Qué es DCL?</h3>
+            <p>DCL significa Data Control Language o Lenguaje de Control de Datos en español.Permite crear roles, permisos e integridad referencial, así como el control al acceso a la base de datos.</p>
+            <h4>Sentencias DCL</h4>
+            <li><span id="titulos">GRANT: </span>Usado para otorgar privilegios de acceso de usuario a la base de datos.</li>
+            <li><span id="titulos">REVOKE: </span>Utilizado para retirar privilegios de acceso otorgados con el comando GRANT.</li>
+        </div>
+        <hr>
+        <div>
+        <h3>¿Qué es TCL?</h3>
+        <p>TCL significa Transactional Control Language o Lenguaje de Control Transaccional en español. Permite administrar diferentes transacciones que ocurren dentro de una base de datos.</p>
+        <h4>Sentencias TCL</h4>
+        <li><span id="titulos">COMMIT: </span>Empleado para guardar el trabajo hecho.</li>
+        <li><span id="titulos">ROLLBACK: </span>Utilizado para deshacer la modificación que hice desde el ultimo COMMIT.</li>
+        </div>
+        </article>
+        <article>
+            <h2 id="create">SQL CREATE</h2>
+            <p>Podemos crear con esta sentencia tanto tablas como la propia base de datos dicha.</p>
+            <div id= "senten"><p id="sent"><span>CREATE DATABASE</span> Nombre_Base;</p></div>
+            <a href="https://www.w3schools.com/sql/exercise.asp?filename=exercise_database1" target="blank"><button>Pruebalo</button></a>
+            <hr>
+            <div id= "senten"><p id="sent"><span>CREATE TABLE</span> tabla(</p>
+            <p>Columna1 <span>tipoDato</span>,</p>
+            <p>Columna2 <span>tipoDato</span>,</p>
+            <p>Columna3 <span>tipoDato</span>...);</p></div>
+            <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_create_table" target="blank"><button>Pruebalo</button></a>
+            <hr>
+         </article>
+         <article>
+             <h2 id="drop">SQL DROP</h2>
+             <p>Con la sentencia DROP podemos eliminar elementos de una base de datos, como también la base misma.</p>
+             <div id= "senten"><p id="sent"><span>DROP DATABASE</span> Nombre_Base;</p></div>
+             <a href="https://www.w3schools.com/sql/exercise.asp?filename=exercise_database2" target="blank"><button>Pruebalo</button></a>
+             <hr>
+             <div id= "senten"><p id="sent"><span>DROP TABLE</span> tabla;</p></div>
+             <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_drop_table" target="blank"><button>Pruebalo</button></a>
+            <hr>
+            <p>También existe la sentencia TRUNCATE que nos elimina el contenido de una tabla sin eliminarla</p>
+            <div id= "senten"><p id="sent"><span>TRUNCATE TABLE</span> tabla;</p></div>
+            <a href="https://www.w3schools.com/sql/exercise.asp?filename=exercise_database4" target="blank"><button>Pruebalo</button></a>
+            <hr>
+        </article>
+        <article>
+            <h2 id="alter">SQL ALTER</h2>
+            <p>ALTER TABLE se utiliza para eliminar o modificar las columnas de una tabla.</p>
+            <p>También se puede emplear para añadir o eliminar constantes a dichas columnas.</p>
+            <div id= "senten"><p id="sent"><span>ALTER TABLE</span> tabla
+            <p><span>ADD</span> columna1 tipoDato;</p></p></div>
+            <p>Con esta sentencia añadimos una columna a la tabla.</p>
+            <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_alter_table" target="blank"><button>Pruebalo</button></a>
+           
+            <hr>
+            <div id= "senten"><p id="sent"><span>ALTER TABLE</span> tabla <p><span>DROP COLUMN</span> columna1;</p></p></div>
+            <p>Con esta sentencia eliminamos una columna de una tabla.</p>
+            <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_alter_table2" target="blank"><button>Pruebalo</button></a>
+            <hr>
+            <div id= "senten"><p id="sent"><span>ALTER TABLE</span> tabla <p><span>MODIFY COLUMN</span> columna1 tipoDato;</p></p></div>
+            <p>Empleamos esta sentencia para cambiar el tipo de dato de la columna.</p>
+            <a href="https://www.w3schools.com/sql/exercise.asp?filename=exercise_database6" target="blank"><button>Pruebalo</button></a>
+            <hr>
+        </article>
+    </section>
+
+    <nav id="mySidenav" class="sidenav Nav-Enlace desaparece">
+        <div>
+            <a href="javascript:void(0)" class="closebtn desaparece" onclick="closeNav()">&times;</a>
+        <h4>Unidad 1</h4>
+        <a href="Unidad1.html#sa">Sistemas de Almacenamiento</a>
+        <a href="Unidad1.html#bd">Bases de datos</a>
+        <h4>Unidad 2</h4>
+        <a href="Unidad2.html#sql">SQL</a>
+        <a href="Unidad2.html#sentencias">DDL,DML,DCL,TCL</a>
+        <a href="Unidad2.html#create">SQL CREATE</a>
+        <a href="Unidad2.html#drop">SQL DROP</a>
+        <a href="Unidad2.html#alter">SQL ALTER</a>
+
+
+
+       
+        <h4>Unidad 3</h4>
+        <a href="Unidad3.html#select">SELECT</a>
+        <a href="Unidad3.html#where">WHERE</a>
+        <a href="Unidad3.html#orderby">ORDER BY</a>
+        <a href="Unidad3.html#operators">Operators</a>
+        <a href="Unidad3.html#groupby">GROUP BY</a>
+        <a href="Unidad3.html#count">COUNT(),AVG()</a>
+        <a href="Unidad3.html#min">MIN(),MAX()</a>
+        <a href="Unidad3.html#having">HAVING</a>
+        <a href="Unidad3.html#joins">JOINS</a>
+        <a href="Unidad3.html#union">UNION</a>
+
+        <h4>Unidad 4</h4>
+       <a href="Unidad4.html#insertinto">INSERT INTO</a>
+       <a href="Unidad4.html#update">UPDATE</a>
+       <a href="Unidad4.html#delete">DELETE</a>
+        </div>
+    </nav>
+    <aside>
+        <a href="https://www.udemy.com/course/curso-completo-de-bases-de-datos-de-0-a-avanzado/?utm_source=adwords&utm_medium=udemyads&utm_campaign=LongTail_la.ES_cc.ES&utm_term=_._ag_120892795813_._ad_515900100215_._kw__._de_c_._dm__._pl__._ti_dsa-1190286617479_._li_9047045_._pd__._&matchtype=&gclid=Cj0KCQiA47GNBhDrARIsAKfZ2rCWsBB1WUZxZK3zHQ2TpyF15Qj-6v6NRcU6O04R2re0vTtggl8tvh0aAkggEALw_wcB" target="blank"><img src="https://medievalstrucos.files.wordpress.com/2018/05/sql.png?w=840" alt="Publicidad"></a>
+        <a href="https://courses.w3schools.com/"><img src="data:image/png;base64,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" alt="Publicidad"></a>
+    
+    </aside>
+    <footer>
+        <div> 
+        <p>Referencias</p>
+        <a href="https://www.w3schools.com/sql/default.asp">W3Schools</a>
+        <a href="https://platzi.com/blog/que-es-ddl-dml-dcl-y-tcl-integridad-referencial/">Operaciones con BD</a>
+        </div>
+        <div>
+            <p>Aprende con nosotros</p>
+            <a href="https://campusfp.es/">CampusFP</a>
+        </div>
+      
+    </footer>
+</main>
+<script>    
+    function accion(){
+        console.log("Esta funcionando el boton");
+        var ancla = document.getElementsByClassName("Nav-Enlace");
+        document.getElementById("mySidenav").style.width = "100%";
+        for (var i = 0; i < ancla.length; i++) {
+            ancla[i].classList.toggle("desaparece");
+            
+        }
+    }
+ 
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+</script>
+</body>
+</html>

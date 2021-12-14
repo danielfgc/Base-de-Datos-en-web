@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descrption" content="Esta web trata sobre la asignatura BASE DE DATOS del Grado Superior de Desarrollo de Aplicaciones Multiplataforma">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link  href="Unidad1.html">
+    <link  href="Unidad2.html">
+    <link  href="Unidad3.html">
+    <link  href="Unidad4.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+
+    <title>Base de Datos</title>
+    
+</head>
+<body>
+    <main>
+    <header>
+        <button class="boton" onclick="accion()">&#9776;</button>
+            
+            <a href="inicio.html">BASE DE DATOS</a>
+
+           
+        
+    </header>
+    <section>
+        <h1>Introducción</h1>
+        <div id="botones">
+            <a href="inicio.html"><button>Inicio</button></a>
+            <a href="Unidad1.html"><button>Unidad 1</button></a>
+        </div>
+        <article>
+        <p>En esta página web vamos a ver el temario de la asignatura de base de datos hasta el dia de hoy. Veremos las 4 unidades dadas.
+        </p>
+        <p>A continuación veremos en una tabla un resumen de las unidades. Usando el navegador de la derecha podrás indagar más en los temas que prefieras.</p>
+        <table>
+            <tr>
+                <td><span id="titulos"> Unidad 1. </span><p>Almacenamiento de datos</p></td>
+                <td>En esta unidad conoceremos los sistemas de almacenamiento y como empezar a crear una base de datos </td>
+            
+            </tr>
+            <tr>
+                <td><span id="titulos">Unidad 2.</span> <p>Bases de datos relacionales</p></td>
+                <td>En esta unidad trataremos con nuestro primer Gestor de Base de Datos, que será SQL, en concreto con 
+                    MySQL.
+                    <hr>
+                    Empezaremos con los tipos de gestión realizables. (DDL,DML,DCL,TCL). También veremos las sentencias
+                        CREATE, DROP y ALTER.
+                    
+                </td>
+            </tr>
+            <tr>
+                <td><span id="titulos">Unidad 3.</span> <p>Realización de consultas</p></td>
+                <td>En esta unidad, trataremos con sentencias de tipo DML para manejar Los datos que ya tenemos en nuestra Base.</td>
+            </tr>
+            <tr>
+                <td><span id="titulos">Unidad 4.</span> <p>Tratamiento de datos</p></td>
+                <td>En esta unidad trataremos con sentencias de tipo DML pero esta vez para insertar o modificar datos de nuestra Base.</td>
+            </tr>
+        </table>
+        </article>
+    </section>
+
+    <nav id="mySidenav" class="sidenav Nav-Enlace desaparece">
+       
+        <div>
+        <a href="javascript:void(0)" class="closebtn desaparece" onclick="closeNav()">&times;</a>
+        <h4>Unidad 1</h4>
+        <a href="Unidad1.html#sa" >Sistemas de Almacenamiento</a>
+        <a href="Unidad1.html#bd">Bases de datos</a>
+        <h4>Unidad 2</h4>
+        <a href="Unidad2.html#sql">SQL</a>
+        <a href="Unidad2.html#sentencias">DDL,DML,DCL,TCL</a>
+        <a href="Unidad2.html#create">SQL CREATE</a>
+        <a href="Unidad2.html#drop">SQL DROP</a>
+        <a href="Unidad2.html#alter">SQL ALTER</a>
+
+
+
+       
+        <h4>Unidad 3</h4>
+        <a href="Unidad3.html#select">SELECT</a>
+        <a href="Unidad3.html#where">WHERE</a>
+        <a href="Unidad3.html#orderby">ORDER BY</a>
+        <a href="Unidad3.html#operators">Operators</a>
+        <a href="Unidad3.html#groupby">GROUP BY</a>
+        <a href="Unidad3.html#count">COUNT(),AVG(),SUM()</a>
+        <a href="Unidad3.html#min">MIN(),MAX()</a>
+        <a href="Unidad3.html#having">HAVING</a>
+        <a href="Unidad3.html#joins">JOINS</a>
+        <a href="Unidad3.html#union">UNION</a>
+
+        <h4>Unidad 4</h4>
+       <a href="Unidad4.html#insertinto">INSERT INTO</a>
+       <a href="Unidad4.html#update">UPDATE</a>
+       <a href="Unidad4.html#delete">DELETE</a>
+    </div>
+
+    </nav>
+    <aside>
+        <a href="https://www.udemy.com/course/curso-completo-de-bases-de-datos-de-0-a-avanzado/?utm_source=adwords&utm_medium=udemyads&utm_campaign=LongTail_la.ES_cc.ES&utm_term=_._ag_120892795813_._ad_515900100215_._kw__._de_c_._dm__._pl__._ti_dsa-1190286617479_._li_9047045_._pd__._&matchtype=&gclid=Cj0KCQiA47GNBhDrARIsAKfZ2rCWsBB1WUZxZK3zHQ2TpyF15Qj-6v6NRcU6O04R2re0vTtggl8tvh0aAkggEALw_wcB" target="blank"><img src="https://medievalstrucos.files.wordpress.com/2018/05/sql.png?w=840" alt="Publicidad"></a>
+        <a href="https://courses.w3schools.com/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVQAAACUCAMAAAD70yGHAAAAq1BMVEX///9LS0tDpUdISEhAQEBGRkbU1NQ9PT1CQkKtra1QUFAzoDg+o0KMjIw3oTx+fn5lZWWq1KxgYGDLy8u+3r/v7+/4+PhaWlq3t7egzqLBwcFxuXT4/fg4ODhzt3VbW1ubm5vl5eWjo6NwcHBOqlLa2tp7e3vHx8eTk5Pj8eOHh4fg4OCPxpHG4scwMDCu1a9csGDu9u6OxpBXrVre7t6DwYUlnCvQ59GazJz+9093AAAH8ElEQVR4nO2abXuiOBSGQUCiIHXaoqhlFNTWl+mL23bb///LlnMSQkCdGVt77c5ez/2lSEICt4fkJNayAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPBfIO+b9PL8Lv5IM23ftp3LwefvpyeKhvqfb+dfZeU6Bp4Qqdf7gNazSvX+eKme3UR0s5ObOZ9U7/8QqcIIVGXVuzy5GUg1WXWHmq7jS69++9RmILXGwGSsBoDZqa1A6k9op/z+3558HUs9Xh5n8WHjcZbVCs4k9Wa33n26kWNkHWKwd7ykw+TABXJQnevrl0mn4s5s+UqXxFKqPeRPyXhZTx+yzvzS891hv9cYVeJk3repYFM1XJM6MDqR/TS5Wd8/flPok/d/PT1HQfg0edRiX0bf9nm8flv/TN4xrh6E66bybq5St0AeJw+u6x+KrKFjRGoyFXSJK1z6K9JNWWvQ6QrfVaRLJdWWtX3Xud1WLc4816NGHUf4czOv6Hi+KvD8aenbkBr3jE6oH6NRyfq1FQVBxARhefI5iMKw1WqFYRSVpq//jg4RRIvRqUoLkfSwSuSVSw+upLqH37KBlJPzh01a5gNqqO2pWsuub5QILVXjpTNVNe6bJV41BQ42ZoHjd5pSY0fUu3ebUh8DcleyUPpqJ4NJebZ1hOD55HHiVKkrYesLxjy+Op7GV5G6deXTqiJfSzUSs/RKqutzg8IvoIzYETokfWm5iGxOldNOQ+rca3TfjNSREhVKWnzyjU+GQUFER9HkF1Jb0fcvkJq1S5bJnKv4My6Y8kgwvNDcyuce8BBRpF99dXpbSp0SXQ4w1XjHZzGzdry9mpNfpysH9Sv+xtxeO9u2L1ifyGpSt3wr7tzovr4mKfUtJt+ZVzp5s6A4jZ6uX6y3Rx4EglEldcGowC4I2Xtw6sD6G1LzB1/jyAfh87EcXfcn7Y7LshNz3lApFbPt0pWCigesy13KSrQEtX05PfapxB9blXo5uGipdIe2ODSXKp5Y3+T+xjz5SPJC9c6vpT6qwFLD3Q3xHnGV4mj3g6wG179rU/EbUjuiNnLZ3kp6jOm8O95rkgPVmdZl1/LULQuj93zsVxotOQs6XTpassZVWbDhK+hyLVXe1vHMlwM1em2cnYSlRuKe6gSPVilVnh9FlXf6ZsJT3/+PSFVZV8yhMttrklPZpuya1AENHCx1zv51LXacUq0ZderpWN+mZdxWUrn75dEne+VAvamfXLPpR/2ZnZH4Y1IpVL9Cav6QKnw5Afl9rjNgxeKiM5aUz5fz0NjIGetSh0pqTAfG97LlwKUpjIbRKhu2BtSxSxGtpd7xaNxdJar7ZpLKviaNk+wuqsZINt+yjksdfZHUZXnbSZLLiUrIAjn9eq4ab92pTNFv6bGHjffysNSMWhAdXYtHFP9OxbK3qa6/dNSgqqVmcvIXZffebU3rjifuZpI5isy337Leo19Iff8iqTV4ypDBpJasFU7KgyO5duaN606V2ghhS0uuUqpNPfW1Re3t2IV/jlRLztzycZMiPIVKEjlN4os/ITWrRWo1T8kpjHs1VlQXxQqw7N62jbUH8SdFKg92epkaJ0lnI5PEoVfO4zTHlNmm5rBU6a5ywXM+z2AX9X2TKtMw1/7tJJlx95u57dQmtiIhfS5CNfrRuHtOCYIX/fk7DbzP1ldI9U+W2gxES07kHEsygWysbg5LlamSrV1woprSkcx1dSMJpwWU3B/ZpVqS1NqSipOnRaPajiKzUi3D+d06s1Re6aib+a21v8yqNvslNNqy7Ni39zcHj0jldZN+zTP+OrhtHgj0dzegQUfuHB7b+us7DanXOgc1YdVRGaoyt3+xzizVMp5KSpUPfkRqJmf8Q5vUFMJyo4X3B9xZbQA4IpVn9XJZv+XlrS9Tsw03Im8sNpZXR6TGdjNSLV54Ro3VEL//4UImVaNqeXVeqbyAF5er2SzfcBY6I/JbvRrsrTS9vpA/A8rZf9muGEsJbCeTeyR2b5bX9lMPSZUZhD/Px/mGs+ByhM3kdtjl7C5ZCWPI0VIHRu/LDmt3i/FhTYv3N6r5ja0GTz/eR8Z+6veIt1heR2/vE1nh5fxSE7l95AmhhNGRqPY8en61DeSprTb1E3E/rTYF5E6SK7c0Vqlus0Dvpx6SWtYVruxe6J9cEt5XdESRYHANP6tLzcze+X5Z+zoKw+Ceat48RXKPSu2Nyv3UHe+itMIoiPjgb+n6vFIHfdc+At/7gZ+oPblfxFNTDT9Xja7M7VS9n3pQajEWVz04/rwaNK4cY33sTtUWVCP5N2+X91PXhSoptbBa289Tk9ZuYpwNyyXreaVag17qek7Tjw7IVWPl74i03Lafe+b/WRQFM93ouIhiURa7P5VqteepK/gfNdJux7yz+MLnRooCoUfoXlGVbywTtd493+ExaR1pqYWSRRBFak9a7acWfGvx2SJYg0k5ZZ11mUpkndvLrreP2Hv96Vyu9zDmdrfCNgqIbSe/GKoi2k9Ni2unWiptKbeNG8jn3ctevmzuOcVJfjucbvK7qqDnUF90kdl7175IZB2K1OitrD14G42eFrVILbh5G70/LSaj6icq+j2gGCeU1OI4KiOVjj8iFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf4B/AkK5hrsciZwAAAABJRU5ErkJggg==" alt="Publicidad"></a>
+    
+    </aside>
+    <footer>
+        <div> 
+        <p>Referencias</p>
+        <a href="https://www.w3schools.com/sql/default.asp" target="blank">W3Schools</a>
+        <a href="https://platzi.com/blog/que-es-ddl-dml-dcl-y-tcl-integridad-referencial/" target="blank">Operaciones con BD</a>
+        </div>
+        <div>
+            <p>Aprende con nosotros</p>
+            <a href="https://campusfp.es/" target="blank">CampusFP</a>
+        </div>
+
+      
+    </footer>
+</main>
+<script>    
+    function accion(){
+        console.log("Esta funcionando el boton");
+        var ancla = document.getElementsByClassName("Nav-Enlace");
+        document.getElementById("mySidenav").style.width = "100%";
+        for (var i = 0; i < ancla.length; i++) {
+            ancla[i].classList.toggle("desaparece");
+            
+        }
+    }
+ 
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+</script>
+</body>
+</html>

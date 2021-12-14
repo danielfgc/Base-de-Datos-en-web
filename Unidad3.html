@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descrption" content="Esta web trata sobre la asignatura BASE DE DATOS del Grado Superior de Desarrollo de Aplicaciones Multiplataforma">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+    <title>Base de Datos</title>
+    
+</head>
+<body>
+    <main>
+    <header>
+        
+        <button class="boton" onclick="accion()">&#9776;</button>
+                    <a href="inicio.html">BASE DE DATOS</a>
+            
+           
+        
+    </header>
+    <section>
+        <h1>Unidad 3</h1>
+        <div id="botones">
+            <a href="Unidad2.html"><button>Unidad 2</button></a>
+            <a href="Unidad4.html"><button>Unidad 4</button></a>
+        </div>
+        <article>
+            <h2 id="select">SELECT</h2>
+            <p>La sentencia SELECT es empleada para seleccionar en la base de datos. Los datos son devueltos en una tabla.</p>
+            <p>Podemos seleccionar tanto columnas sueltas, como todas las columnas. 
+                Tambien se pueden realizar operaciones con ellas que veremos posteriormente
+            </p>
+            <div id= "senten"><p id="sent"><span>SELECT</span>columna1, columna2 <span>FROM</span> tabla;</p></div>
+            <p>Con esta sentencia seleccionamos las columnas que deseamos.</p>
+            <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_columns"target="Blank"><Button>Pruebalo</button></a>
+                <hr>
+            <div id= "senten"><p id="sent"><span>SELECT</span>*<span>FROM</span> tabla;</p></div>
+            <p>Con esta sentencia seleccionamos todas las columnas de la tabla</p>
+            <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all"target="Blank"><Button>Pruebalo</button></a>
+                <hr>
+            
+            
+        </article>
+        <article>
+            <h2 id="where">WHERE</h2>
+            <p>La sentencia WHERE se usa para filtrar resultados al mostar la tabla.</p>
+            <p>Solo muestra resultados que cumplen la condición.</p>
+            <div id= "senten"><p id="sent"><span>SELECT</span>Columna1, columna2 <span>FROM</span>Tabla <p><span>WHERE</span>Condición;</p></p></div>
+            <p>Seleccionamos columnas de una tabla y solo se muestran los que cumplen la condición.</p>
+            <div id= "senten"><p id="sent"><span>SELECT</span>*<span>FROM</span>Tabla <p><span>WHERE</span>Condición;</p></p></div>
+            <p>Seleccionamos todas las columnas y filtramos por condición.</p>
+            <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_where"target="Blank"><Button>Pruebalo</button></a>
+                <hr>
+        </article>
+        <article>
+            <h2 id="orderby">ORDER BY</h2>
+            <p>La sentencia ORDER BY se utiliza para ordenar los resultados mostrados.</p>
+            <p>Por defecto se ordena en orden ascendente, si queremos que sea al revés utilizamos la palabra DESC.</p>
+            <div id= "senten"><p id="sent"><span>SELECT</span> Columna1, columna2 <span>FROM</span> tabla <p><span>ORDER BY</span> columna1, columna2 <span>ASC</span>|<span>DESC</span>;</p></p></div>
+            <p>Seleccionamos columnas de tabla y ordenamos según queramos.</p>
+            <div id= "senten"><p id="sent"><span>SELECT</span>*<span>FROM</span> tabla <p><span>ORDER BY</span> columna1;</p></p></div>
+            <p>Seleccionamos todas las columnas y mostramos la tabla ordenada.</p>
+            <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_orderby"target="Blank"><Button>Pruebalo</button></a>
+                <hr>
+        </article>
+        <article>
+            <h2 id="operators">OPERATORS</h2>
+            <p>A continuación vamos a ver algunos de los muchos operadores que existen en SQL.</p>
+            <table>
+                <th>Operador</th>
+                <th>Descripción</th>
+                <th>Ejemplo</th>
+                <tr>
+                    <td>+</td>
+                    <td>Añadir</td>
+                    <td><a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_add"target="Blank"><Button>Pruebalo</Button></a></td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>Substraer</td>
+                    <td><a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_subtract"target="Blank"><Button>Pruebalo</Button></a></td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>Multiplicación</td>
+                    <td><a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_multiply"target="Blank"><Button>Pruebalo</Button></a></td>
+                </tr>
+                <tr>
+                    <td>/</td>
+                    <td>División</td>
+                    <td><a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_divide"target="Blank"><Button>Pruebalo</Button></a></td>
+                </tr>
+                <tr>
+                    <td>%</td>
+                    <td>Módulo</td>
+                    <td><a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_modulo"target="Blank"><Button>Pruebalo</Button></a></td>
+                </tr>
+                <tr>
+                    <td>=</td>
+                    <td>Igual a</td>
+                    <td><a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_equal_to"target="Blank"><Button>Pruebalo</Button></a></td>
+                </tr>
+                <tr>
+                    <td>></td>
+                    <td>Mayor que</td>
+                    <td><a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_greater_than"target="Blank"><Button>Pruebalo</Button></a></td>
+                </tr>
+                <tr>
+                    <td><</td>
+                    <td>Menor que</td>
+                    <td><a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_less_than"target="Blank"><Button>Pruebalo</Button></a></td>
+                </tr>
+                <tr>
+                    <td>>=</td>
+                    <td>Mayor o igual que</td>
+                    <td><a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_greater_than2"target="Blank"><Button>Pruebalo</Button></a></td>
+                </tr>
+                <tr>
+                    <td><=</td>
+                    <td>Menor o igual que</td>
+                    <td><a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_less_than2"target="Blank"><Button>Pruebalo</Button></a></td>
+                </tr>
+                <tr>
+                    <td><></td>
+                    <td>Diferente de</td>
+                    <td><a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_not_equal_to"target="Blank"><Button>Pruebalo</Button></a></td>
+                </tr>
+                <tr>
+                    <td>ALL</td>
+                    <td>Muestra todos si la condicion se cumple</td>
+                    <td><a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_all&ss=-1"target="Blank"><Button>Pruebalo</Button></a></td>
+                </tr>
+                <tr>
+                    <td>AND</td>
+                    <td>Si se cumplen ambas condiciones</td>
+                    <td><a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_and"target="Blank"><Button>Pruebalo</Button></a></td>
+                </tr>
+                <tr>
+                    <td>ANY</td>
+                    <td>Si alguno de los operandos son similares a la condición</td>
+                    <td><a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_any&ss=-1"target="Blank"><Button>Pruebalo</Button></a></td>
+                </tr>
+                <tr>
+                    <td>BETWEEN</td>
+                    <td>Establece rango</td>
+                    <td><a href="https://www.w3schoolhttps://www.w3schools.com/sql/trysql.asp?filename=trysql_op_existss.com/sql/trysql.asp?filename=trysql_op_between"target="Blank"><Button>Pruebalo</Button></a></td>
+                </tr>
+                <tr>
+                    <td>EXISTS</td>
+                    <td>Si hay algun valor en la tabla</td>
+                    <td><a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_exists"target="Blank"><Button>Pruebalo</Button></a></td>
+                </tr>
+                <tr>
+                    <td>IN</td>
+                    <td>Si es igual el operando a una lista dada</td>
+                    <td><a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_in"target="Blank"><Button>Pruebalo</Button></a></td>
+                </tr>
+                <tr>
+                    <td>LIKE</td>
+                    <td>Cuando el operando es igual que lo evaluado</td>
+                    <td><a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_like"target="Blank"><Button>Pruebalo</Button></a></td>
+                </tr>
+                <tr>
+                    <td>NOT</td>
+                    <td>Lanza una tabla con los valores contrarios a los que evaluamos</td>
+                    <td><a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_not"target="Blank"><Button>Pruebalo</Button></a></td>
+                </tr>
+                <tr>
+                    <td>OR</td>
+                    <td>Muestra o una u otra de 2 condiciones</td>
+                    <td><a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_or"target="Blank"><Button>Pruebalo</Button></a></td>
+                </tr>
+                <tr>
+                    <td>SOME</td>
+                    <td>Si algunos de los valores se parecen al evaluado</td>
+                    <td><a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_some&ss=-1"target="Blank"><Button>Pruebalo</Button></a></td>
+                </tr>
+            </table>
+        </article>
+        <article>
+            <h2 id="groupby">GROUP BY</h2>
+            <p>El GROUP BY se utiliza se utiliza para agrupar filas que tienen algun valor común.</p>
+            <p>Normalmente se utiliza con funciones como COUNT(), MAX(), MIN(), SUM(), AVG(), que veremos más adelante.</p>
+            <div id= "senten"><p id="sent"><span>SELECT COUNT</span>(Columna1), columna2 <p><span>FROM</span> tabla </p><p><span>GROUP BY </span> columna2;</p></p></div>
+            <p>Seleccionamos el conteo de la columna1 y los agrupamos en la columna2.</p>
+            <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_groupby_orderby"target="Blank"><Button>Pruebalo</button></a>
+                <hr>
+        </article>
+        <article>
+            <h2 id="count">COUNT(),AVG(),SUM()</h2>
+            <p>La función Count() Nos devuelve una suma de filas que cumplen un criterio.</p>
+            <div id= "senten"><p id="sent"><span>SELECT COUNT</span>(Columna1) <p><span>FROM</span> tabla;</p></p></div>
+            <p>Seleccionamos una columna para el conteo de filas</p>
+            <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_count"target="Blank"><Button>Pruebalo</button></a>
+                <hr>
+            <hr>
+            <p>La función AVG() devuelve la media de una fila.</p>
+            <div id= "senten"><p id="sent"><span>SELECT AVG</span>(Columna1) <p><span>FROM</span> tabla;</p></p></div>
+            <p>Selecciomos una fila y calculamos la media.</p>
+            <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_avg"target="Blank"><Button>Pruebalo</Button></a>
+            <hr>
+            <p>La función SUM(), devuelve la suma de una columna.</p>
+            <div id= "senten"><p id="sent"><span>SELECT SUM</span>(Columna1) <p><span>FROM</span> tabla;</p></p></div>
+            <p>Seleccionamos una columna y sumamos todos sus valores.</p>
+            <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_sum"target="Blank"><Button>Pruebalo</Button></a>
+            <hr>
+        </article>
+        <article>
+            <h2 id="min">MIN(),MAX()</h2>
+            <p>La función MIN() devuelve el valor más pequeño de la columna seleccionada</p>
+            <div id= "senten"><p id="sent"><span>SELECT MIN</span>(Columna1) <p><span>FROM</span> tabla;</p></p></div>
+            <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_min" target="blank"><button>Pruebalo</button></a>
+            <hr>
+            <p>La función MAX() devuelve el valor más alto de la columna seleccionada</p>
+            <div id= "senten"><p id="sent"><span>SELECT MAX</span>(Columna1) <p><span>FROM</span> tabla;</p></p></div>
+            <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_max" target="blank"><button>Pruebalo</button></a>
+            <hr>
+        </article>
+        <article>
+            <h2 id="having">HAVING</h2>
+            <p>La palabra HAVING es similar al WHERE, la diferencia es que es usado después de realizar una agrupación.</p>
+            <div id= "senten"><p id="sent"><span>SELECT</span> columna1 <p><span>FROM</span> tabla</p><p><span>WHERE</span> condición</p><p><span>GROUP BY </span> columna1</p><p><span>HAVING </span> condición</p><p><span>ORDER BY</span> columna1;</p></p></div>
+            <p>Seleccionamos una colmna, evaluamos una condición, después agrupamos por columna, evaluamos una condición con HAVING, y ordenamos por columna.</p>
+            <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_having" target="blank"><button>Pruebalo</button></a>
+            <hr>
+        </article>
+        <article>
+            <h2 id="joins">JOINS</h2>
+            <p>Los JOIN se utilizan para unir varias tablas, usando una columna que tengan en común, que suelen ser PK Y FK.</p>
+            <p>Existen 3 tipos:</p>
+            <div id= "senten"><p id="sent"><span>SELECT</span> Tabla1.Columna1, Tabla2.Columna1, Tabla1.Columna2 <p><span>FROM</span> Tabla1</p><p><span>INNER JOIN </span> Tabla2 <span>ON</span> Tabla1.Tabla1Id = Tabla2.Tabla1Id;</p></p></div>
+            <p>Con INNER JOIN hacemos la intersección entre 2 tablas, seleccionando los atributos deseados y empleando Tabla1Id como campo en común entre ambas.</p>
+            <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_join" target="blank"><button>Pruebalo</button></a>
+            <hr>
+            <div id= "senten"><p id="sent"><span>SELECT</span>*<p><span>FROM</span> Tabla1</p><p><span>LEFT JOIN </span> Tabla2 <span>ON</span> Tabla1.Tabla1Id = Tabla2.Tabla1Id;</p></p></div>
+            <p>Con LEFT JOIN mostramos todos los atributos de la tabla de la izquierda con el campo en común de la derecha.</p>
+            <div id= "senten"><p id="sent"><span>SELECT</span>*<p><span>FROM</span> Tabla1</p><p><span>RIGHT JOIN </span> Tabla2 <span>ON</span> Tabla1.Tabla1Id = Tabla2.Tabla1Id;</p></p></div>
+            <p>Con LEFT JOIN mostramos todos los atributos de la tabla de la derecha con el campo en común de la izquierda.</p>
+            <div id= "senten"><p id="sent"><span>SELECT</span>*<p><span>FROM</span> Tabla1</p><p><span>FULL JOIN </span> Tabla2 <span>ON</span> Tabla1.Tabla1Id = Tabla2.Tabla1Id;</p></p></div>
+            <p>Con FULL JOIN mostramos todos los atributos de ambas tablas.</p>
+        </article>
+        <article>
+            <h2 id="union">UNION</h2>
+            <p>Con UNION unimos 2 columnas de una tabla en 1.</p>
+            <div id= "senten"><p id="sent"><span>SELECT</span> Columna1 <span>FROM</span> tabla1 <p><span>UNION</span></p><p><span>SELECT</span> Columna1 <span>FROM</span> Tabla2;</p></p></div>
+            <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_union" target="blank"><button>Pruebalo</button></a>
+            <hr>
+            <p>Por defecto une los elementos sin duplicar, si queremos duplicados tendremos que utilizar UNION ALL.</p>
+            <div id= "senten"><p id="sent"><span>SELECT</span> Columna1 <span>FROM</span> tabla1 <p><span>UNION ALL</span></p><p><span>SELECT</span> Columna1 <span>FROM</span> Tabla2;</p></p></div>
+            <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_union_all" target="blank"><button>Pruebalo</button></a>
+            <hr>
+        </article>
+
+    </section>
+
+    <nav id="mySidenav" class="sidenav Nav-Enlace desaparece">
+        <div>
+            <a href="javascript:void(0)" class="closebtn desaparece" onclick="closeNav()">&times;</a>
+        <h4>Unidad 1</h4>
+        <a href="Unidad1.html#sa">Sistemas de Almacenamiento</a>
+        <a href="Unidad1.html#bd">Bases de datos</a>
+        <h4>Unidad 2</h4>
+        <a href="Unidad2.html#sql">SQL</a>
+        <a href="Unidad2.html#sentencias">DDL,DML,DCL,TCL</a>
+        <a href="Unidad2.html#create">SQL CREATE</a>
+        <a href="Unidad2.html#drop">SQL DROP</a>
+        <a href="Unidad2.html#alter">SQL ALTER</a>
+
+
+
+       
+        <h4>Unidad 3</h4>
+        <a href="Unidad3.html#select">SELECT</a>
+        <a href="Unidad3.html#where">WHERE</a>
+        <a href="Unidad3.html#orderby">ORDER BY</a>
+        <a href="Unidad3.html#operators">Operators</a>
+        <a href="Unidad3.html#groupby">GROUP BY</a>
+        <a href="Unidad3.html#count">COUNT(),AVG(),SUM()</a>
+        <a href="Unidad3.html#min">MIN(),MAX()</a>
+        <a href="Unidad3.html#having">HAVING</a>
+        <a href="Unidad3.html#joins">JOINS</a>
+        <a href="Unidad3.html#union">UNION</a>
+
+        <h4>Unidad 4</h4>
+       <a href="Unidad4.html#insertinto">INSERT INTO</a>
+       <a href="Unidad4.html#update">UPDATE</a>
+       <a href="Unidad4.html#delete">DELETE</a>
+        </div>
+    </nav>
+    <aside>
+        <a href="https://www.udemy.com/course/curso-completo-de-bases-de-datos-de-0-a-avanzado/?utm_source=adwords&utm_medium=udemyads&utm_campaign=LongTail_la.ES_cc.ES&utm_term=_._ag_120892795813_._ad_515900100215_._kw__._de_c_._dm__._pl__._ti_dsa-1190286617479_._li_9047045_._pd__._&matchtype=&gclid=Cj0KCQiA47GNBhDrARIsAKfZ2rCWsBB1WUZxZK3zHQ2TpyF15Qj-6v6NRcU6O04R2re0vTtggl8tvh0aAkggEALw_wcB" target="blank"><img src="https://medievalstrucos.files.wordpress.com/2018/05/sql.png?w=840" alt="Publicidad"></a>
+        <a href="https://courses.w3schools.com/"><img src="data:image/png;base64,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" alt="Publicidad"></a>
+    
+    </aside>
+    <footer>
+        <div> 
+        <p>Referencias</p>
+        <a href="https://www.w3schools.com/sql/default.asp">W3Schools</a>
+        <a href="https://platzi.com/blog/que-es-ddl-dml-dcl-y-tcl-integridad-referencial/">Operaciones con BD</a>
+        </div>
+        <div>
+            <p>Aprende con nosotros</p>
+            <a href="https://campusfp.es/">CampusFP</a>
+        </div>
+      
+    </footer>
+</main>
+<script>    
+    function accion(){
+        console.log("Esta funcionando el boton");
+        var ancla = document.getElementsByClassName("Nav-Enlace");
+        document.getElementById("mySidenav").style.width = "100%";
+        for (var i = 0; i < ancla.length; i++) {
+            ancla[i].classList.toggle("desaparece");
+            
+        }
+    }
+ 
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+</script>
+</body>
+</html>
